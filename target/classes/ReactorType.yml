@@ -1,0 +1,135 @@
+-
+  type: "MKER"
+  burnup: !!float 30
+  kpd: !!float 0.352
+  enrichment: !!float 0.024
+  termal_capacity: !!float 4250
+  electrical_capacity: !!float  1500
+  life_time: !!float  50
+  first_load: !!float 192   
+-
+   type: "RBMK"
+   burnup: !!float 25
+   kpd: !!float 0.3125
+   enrichment: !!float 0.027
+   termal_capacity: !!float 3200
+   electrical_capacity: !!float  1000
+   life_time: !!float  40
+   first_load: !!float 192
+-
+   type: "VVER-1200"
+   burnup: !!float  40
+   kpd: !!float  0.33
+   enrichment: !!float  0.0385
+   termal_capacity: !!float  3200
+   electrical_capacity: !!float  1056
+   life_time: !!float  60
+   first_load: !!float  79.84
+-
+   type: "AP1000"
+   burnup: !!float  43.20
+   kpd: !!float  0.339
+   enrichment: !!float  0.048
+   termal_capacity: !!float  3415
+   electrical_capacity: !!float  1158
+   life_time: !!float  60
+   first_load: !!float  93.65
+-
+   type: "BWR"
+   burnup: !!float  45
+   kpd: !!float  0.343
+   enrichment: !!float  0.041
+   termal_capacity: !!float  3572
+   electrical_capacity: !!float  1252
+   life_time: !!float  60    
+   first_load: !!float  128.00
+-
+   type: "ABWR"
+   burnup: !!float  46.40
+   kpd: !!float  0.3655
+   enrichment: !!float  0.036
+   termal_capacity: !!float  4500
+   electrical_capacity: !!float  1645
+   life_time: !!float  60
+   first_load: !!float  128.00
+-
+   type: "EPR"
+   burnup: !!float  36.10
+   kpd: !!float  0.3515
+   enrichment: !!float  0.032
+   termal_capacity: !!float  3992
+   electrical_capacity: !!float  1404.5
+   life_time: !!float  60
+   first_load: !!float  140.66
+-
+   type: "MAGNOX"
+   burnup: !!float  4.5
+   kpd: !!float  0.23
+   enrichment: !!float  0.01
+   termal_capacity: !!float  728
+   electrical_capacity: !!float  184
+   life_time: !!float  60
+   first_load: !!float  120
+-
+   type: "BN"
+   burnup: !!float  140
+   kpd: !!float  42.05
+   enrichment: !!float  0.21
+   termal_capacity: !!float  2800
+   electrical_capacity: !!float  1220
+   life_time: !!float  60
+   first_load: !!float  50.4
+-
+   type: "PWR"
+   burnup: !!float  42.0
+   kpd: !!float  34.0
+   enrichment: !!float  0.045
+   termal_capacity: !!float  3411
+   electrical_capacity: !!float  1150
+   life_time: !!float  50
+   first_load: !!float  74.0
+-
+   type: "CPR-1000"
+   burnup: !!float  52.0
+   kpd: !!float  35.1
+   enrichment: !!float  0.045
+   termal_capacity: !!float  2900
+   electrical_capacity: !!float  1021
+   life_time: !!float  40
+   first_load: !!float  77.0
+-
+   type: "CANDU"
+   burnup: !!float  8
+   kpd: !!float  0.30
+   enrichment: !!float  0.0071
+   termal_capacity: !!float  2343
+   electrical_capacity: !!float  742
+   life_time: !!float  60
+   first_load: !!float  38.9
+-
+   type: "PHWR"
+   burnup: !!float  8
+   kpd: !!float  0.30
+   enrichment: !!float  0.0071
+   termal_capacity: !!float  2343
+   electrical_capacity: !!float  742
+   life_time: !!float  60
+   first_load: !!float  38.9
+-
+   type: "KLT-40"
+   burnup: !!float  42
+   kpd: !!float  0.30
+   enrichment: !!float  0.16
+   termal_capacity: !!float  150
+   electrical_capacity: !!float  32
+   life_time: !!float  36
+   first_load: !!float  0.007
+-
+   type: "PWR_TEST"
+   burnup: !!float  40
+   kpd: !!float  0.33
+   enrichment: !!float  0.044
+   termal_capacity: !!float  3200
+   electrical_capacity: !!float  1056
+   life_time: !!float  60
+   first_load: !!float  79.84
