@@ -1,0 +1,57 @@
+CREATE TABLE IF NOT EXISTS public.regions (
+	id SERIAL PRIMARY KEY,
+	region_name TEXT
+);
+
+CREATE TABLE IF NOT EXISTS public.countries (
+	id SERIAL PRIMARY KEY,
+    country_name TEXT,
+    subregion TEXT,
+    region TEXT,
+    region_id INT NOT NULL DEFAULT 15, 
+    FOREIGN KEY (region_id) REFERENCES public.regions (id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS public.companies (
+	id SERIAL PRIMARY KEY,
+    companies_name TEXT,
+    full_name TEXT,
+    country_id INT DEFAULT 1,
+    FOREIGN KEY (country_id) REFERENCES public.countries (id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS public.sites (
+	id SERIAL PRIMARY KEY, 
+    npp_name TEXT, 
+    place INT NOT NULL DEFAULT 1, 
+    owner_id INT NOT NULL DEFAULT 1, 
+    operator INT, 
+    builder INT,
+    FOREIGN KEY (place) REFERENCES public.countries (id) ON DELETE CASCADE,
+    FOREIGN KEY (owner_id) REFERENCES public.companies (id) ON DELETE CASCADE
+);
+    
+CREATE TABLE IF NOT EXISTS public.units (
+	id SERIAL PRIMARY KEY,
+    code TEXT,
+    unit_name TEXT,
+    site INT DEFAULT 247,
+    status TEXT,
+    type TEXT,
+    model TEXT,
+    class TEXT,
+    ru_design TEXT ,
+    operator INT,
+    nsss_supplier INT,
+    thermal_capacity INT,
+	net_capacity INT,
+    gross_capacity INT,
+    construction_start DATE,
+    commercial_operation DATE,
+    date_shutdown DATE,
+    enrichment NUMERIC(6,5),
+    load_factor INT DEFAULT 90,
+    burnup NUMERIC(6,3) DEFAULT 0,
+    first_load NUMERIC(6,3) DEFAULT 0,
+    FOREIGN KEY (site) REFERENCES public.sites (id) ON DELETE CASCADE
+);

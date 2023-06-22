@@ -1,0 +1,7 @@
+UPDATE public.units SET class='MAGNOX' WHERE class='AGR';
+
+UPDATE public.units SET class='PWR' WHERE class LIKE '%PWR%';
+
+UPDATE public.units SET class='CPR-1000' WHERE class LIKE '%CNP%';
+
+UPDATE public.units SET class='VVER-1200' WHERE class LIKE '%VVER%';
